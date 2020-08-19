@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Login">
+   <children>
+      <TextArea fx:id="TA" layoutX="60.0" layoutY="30.0" prefHeight="450.0" prefWidth="480.0" />
+      <Button fx:id="runQuery" layoutX="503.0" layoutY="540.0" mnemonicParsing="false" onAction="#runquery" text="Run" />
+      <Button fx:id="back" layoutX="60.0" layoutY="540.0" mnemonicParsing="false" onAction="#Goback" text="Back" />
+      <ComboBox fx:id="combox" layoutX="130.0" layoutY="540.0" onAction="#GetComboBoxText" prefWidth="150.0" promptText="Select db" />
+      <ComboBox fx:id="TableMode" layoutX="320.0" layoutY="540.0" onAction="#Selectmode" prefWidth="150.0" promptText="Select Mode" />
+      <Label fx:id="db" layoutX="122.0" layoutY="450.0" prefHeight="17.0" prefWidth="132.0" textFill="#da1919" />
+      <Label fx:id="console" layoutX="60.0" layoutY="480.0" prefHeight="69.0" prefWidth="543.0" />
+   </children>
+</AnchorPane>
